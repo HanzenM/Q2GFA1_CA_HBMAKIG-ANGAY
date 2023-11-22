@@ -1,0 +1,174 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:#FBFFFE;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: #96031A;
+    color: #FBFFFE;
+}
+
+.pagetitle{
+    font-weight:bold;
+    color:#faeb16;
+    font-size:1vw;
+}
+
+.links a{
+    margin-left: 1vw;
+    font-size:1vw;
+}
+
+.videobg{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    position:fixed;
+    z-index:-1;
+}
+
+.imgbg{
+    display:none;
+}
+
+.sprite{
+    background: url('images/sprite3.png') no-repeat;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #96031A;
+    color: #FBFFFE;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+article{
+    position:fixed;
+    background-color:hsl(351, 78%, 48%, 0.35) ;
+    height: 20vh;
+    width: 100%;
+    margin-top: 27.5vh;
+    padding:2.5vw;
+}
+
+article h1{
+    font-weight:bold;
+    color:#faeb16;
+    font-size:2vw;
+}
+
+article p{
+    color:#faeb16;
+    padding-top:2vw;
+    font-size:1vw;
+}
+
+.icon{
+	background: url(../images/sprite3.png);
+    background-repeat: no-repeat;
+	width: 66px;
+	height: 66px;
+    display: inline-block;
+}
+
+#fb{
+    background-position: -439px -146px;
+}
+
+#twt{
+    background-position:  -66px -72px;
+}
+
+#yt{
+    background-position: -439px -221px;
+}
+
+#ig{
+    background-position: -290px -221px;
+}
+@media screen and (max-width: 600px){
+
+    header{
+        background-color: #96031A;
+        padding: 1vw;
+        color: #FBFFFE;
+    }
+
+    nav{
+        position: relative;
+        display: inline-block;
+    }
+
+    .pagetitle{
+        background-color: #7c0315;
+        padding: 1vw;
+        color: #faeb16;
+        font-size:3vw;
+    }
+
+    .links{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .links a{
+        background-color: #a3021a;
+        color: #FBFFFE;
+        padding: 12px 16px;
+        display: block;
+        font-size:3vw;
+    }
+
+    .links a:hover{
+        background-color: #810316;
+    }
+
+    nav:hover .links{
+        display: block;
+    }
+
+    nav:hover .pagetitle{
+        background-color: #6d0414;
+    }
+
+    .videobg{
+        display:none;
+    }
+
+    .imgbg{
+        width:auto;
+        height:100%;
+        object-fit:cover;
+        position:fixed;
+        z-index:-1;
+        display:block;
+        object-position:-125px;
+    }
+
+    article h1{
+        font-size:3vw;
+    }
+
+    article p{
+        font-size: 2vw;
+    }
+}
+
+article{
+    color: #FBFFFE;
+}
